@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamChef Checkout-Details</title>
+        <script src="https://kit.fontawesome.com/42cec204b0.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/dreamChef.css">
+    </head>
+
+    <body>
+         <!-- nav heading -->
+         <nav id="nav_checkoutDetails">
+            <div class="container">
+                <div class="nav-basket nav-sort">
+                    <img class="logo" src="images/DreamChef_logo.png" alt="Logo">
+                    <div class="navBasket-contents">
+                        <p id="navBasket_order">ORDER</p>
+                        <p id="navBasket_details" class="title-uLine">PERSONAL DETAILS</p>
+                        <p id="navBasket_pay">PAYMENT</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- -->
+        <form id="checkoutDetails">
+            <p class="title title-main title-uLine">YOUR DETAILS</p>
+            <div class="container">
+                <div class="basket-contents -gap">
+                    <!-- card left -->
+                    <div class="checkout-cardLeft">
+                        <!-- first name -->
+                        <label for="fName">First name<i>*</i></label><br>
+                        <input type="text"  id="fName" required class="chkOut-input chkOut-input1">
+                        <br> <br>
+                        <!-- last name -->
+                        <label for="sName">Last name<i>*</i></label><br>
+                        <input type="text"  id="sName" required class="chkOut-input chkOut-input1">
+                        <br> <br>
+                        <!-- phone number -->
+                        <label for="phone-areaCodes">Phone number<i>*</i></label><br>
+                        <select name="phone-areaCodes" id="phone-areaCodes" class="chkOut-input">
+                            <option selected disabled>UK</option>
+                            <option value="+44">+44</option>
+                            <option value="+44">+45</option>
+                            <option value="+44">+46</option>
+                            <option value="+44">+47</option>
+                            <option value="+44">+48</option>
+                        </select>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="chkOut-input chkOut-input2">
+                        <br> <br>
+                        <!-- email -->
+                        <label for="email">Email<i>*</i></label><br>
+                        <input type="email" id="email" name="email" required class="chkOut-input chkOut-input1">
+                        <br> <br>
+                        <!-- billing address -->
+                        <label for="address_bill">Billing Address<i>*</i></label><br>
+                        <div class="addressBill-radio">
+                            <input type="radio" id="radBtn_bill01" name="radBtn_billAddress" value="Use Delivery Address" checked>
+                                <label for="radBtn_bill01">Use Delivery Address</label>
+                            <input type="radio" id="radBtn_bill02" name="radBtn_billAddress" value="Enter New Address">
+                                <label for="radBtn_bill02">Enter New Address</label>
+                            <input type="radio" id="radBtn_bill03" name="radBtn_billAddress" value="Use Account Address">
+                                <label for="radBtn_bill03">Use Account Address</label><br>
+                        </div>
+                        <input type="text"  id="address_bill" class="chkOut-input chkOut-input1">
+                        <!-- privacy and policy -->
+                        <div class="policyTxt">
+                            <input type="checkbox" id="chkBx_policy" name="chkBx_policy" value="">
+                                <label for="chkBx_policy">Tick to agree to Our <b class="policyTxt">Privacy Policy</b>, and <b>Terms & Conditions</b>. Also that I am 18 years or older<i>*</i></label>
+                        </div>
+                            <!-- back button -->
+                        <input type="button" id="btn_chkOutBack" class="btn btn-secondary2" value="BACK TO MENU">
+                    </div>
+                    <!-- RIGHT DISPLAY -->
+                    <div class="basket-rightDisplay">
+                        <div class="tab-left">
+                            <!-- delivery info -->
+                            <div class="card-rowContent content-pad">
+                                <div>
+                                    <p class="title title-main5">DELIVERING TO:</p>
+                                    <p id="basket_deliveryAddress">246 Fashion Street</p>
+                                    <p id="basket_deliveryTime">Delivery time: 25 - 30 mins</p>
+                                </div>
+                                <a href="" class="tab-right">Change</a>
+                            </div>
+                            <hr>
+                            <!-- order summary -->
+                            <div class="content-pad">
+                                <p class="title title-main5">ORDER SUMMARY</p>
+                                <div class="card-rowContent">
+                                    <div class="card-left">
+                                        <p>Delivery Fee</p>
+                                        <p>Service Extortion</p>
+                                        <p>Subtotal</p>
+                                    </div>
+                                    <div class="tab-right">
+                                        <p id="basket_deliveryFee">£9.69</p>
+                                        <p id="basket_serviceFraud">£0.00</p>
+                                        <p id="basket_subTotal">£39.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- total -->
+                            <div class="card-rowContent content-pad">
+                                <b class="card-left title title-main4">Total</b>
+                                <b id="basket_total" class="title title-main4 tab-right">£44.30</b>
+                            </div>
+                        </div>
+                        <hr class="hr-wide">
+                        <br>
+                        <input type="button" id="btn_basketCheckout" class="btn btn-primary1" value="CHECKOUT">
+                    </div>
+                </div>
+                <!--  -->
+                <div class="chkOutSecure-container">
+                    <div class="checkout-secure">
+                        <i class="fa-solid fa-lock fa-2x"></i>
+                        <p class="title title-main5">SECURE<br>CHECKOUT</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Footer  -->
+        <footer id="footer">
+            <div class="footer-main">
+                <div class="footer-main1">
+                    <p>Got a question?</p>
+                    <a href="./contact-help.html" class="btn btn-primary2"> CONTACT US </a>
+                </div>
+                <div class="footer-main2 container">
+                    <!-- links column 1 -->
+                    <div>
+                        <a href="./menu.html">MENU</a><br>
+                        <a href="./menu.html#menu-deals">MENU DEALS</a><br>
+                        <a href="#">ORDER</a>
+                    </div>
+                    <!-- links column 2 -->
+                    <div>
+                        <a href="./menu.html#favourites">OUR FAVOURITES</a><br>
+                        <a href="./about.html">ABOUT US</a><br>
+                        <a href="./contact-help.html">HELP & CONTACT</a>
+                    </div>
+                    <!-- social icons column -->
+                    <div class="social">
+                        <div>
+                            <div class="title-footerSocial">FOLLOW US</div>
+                            <div>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="https://www.instragram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <section class="footer-sub container">
+                <div class="footer-sub1">
+                    <div> <img src="images/DreamChef_logoLight.png" alt="Light Logo"> </div>
+                </div>
+                <div class="footer-sub2">
+                    <a href = "./terms.html">Terms and Conditions</a>
+                    <a href = "./cookiesAds_policy.html">Cookies & Ads Policy</a>
+                    <a href = "./privacy.html">Privacy</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

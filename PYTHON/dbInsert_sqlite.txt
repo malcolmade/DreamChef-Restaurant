@@ -1,0 +1,142 @@
+from connect import *
+
+
+# STOCK (ITEM-GROUPS)
+db_cur.execute(
+	""" 
+	INSERT INTO stock_itemGroups
+	(name, description, groupItems)
+	VALUES
+	("SALADS", "Cool autumn days call for hearty, crisp salads with plenty of flavour.
+That’s all the reason you need to get into our organic Seasonal Salad & Veg. With a mix of multiple different salad and veggie portions, you’ll have all you need to lay on a luscious salad spread.",
+4)
+	("CHICKEN", "Awesome crunchy tastiest chicken", 3),
+	("BEEF", "Our beef has been cured for days and marinated with flavours to crave for", 2),
+	("LAMB", "Specily prepared rare lamb that has been cured for days and marinated with flavours to crave for", 1),
+	("PORK", "Rarest pork imported from specialy sourced out farmers", 3),
+	("RICE", "With a wide variety of rice and spices, you will be spoilt for choice.", 3),
+	("PASTA", "Awesome crunchy tastiest pasta", 2),
+	("QUINOA", "Best of the rest tastiest continental quinoa", 1),
+	("SIDES", "Choice of sides to go with your meal", 2),
+	("DESERTS", "Take pleasure in endulging your sweet tooth", 3),
+	("DRINKS", "Quench your thirst after a great meal", 3),
+	("DEALS", "Select from a combintion of great selections from our menu", 4)
+	"""
+)
+
+
+
+# STOCK (GROUP-ITEMS)
+db_cur.execute(
+	"""
+	INSERT INTO stock_groupItems
+	(name, description, quantity, price, imgFileDir, itemGroupID)
+	VALUES
+	("ARAGULA SALAD", "Crisp salads with plenty of flavour.", 7, 32.99, "Images\salads\aragula.PNG", 1),
+	("CAPRESE SALAD", "Crisp salads with plenty of flavour.", 4, 12.25, "Images\salads\caprese.PNG", 1),
+	("TABBOULEH SALAD", "Crisp salads with plenty of flavour.", 2, 18.55, "Images\salads\tabbouleh.PNG", 1),
+	("TUNA SALAD", "Crisp salads with plenty of flavour.", 5, 22.00, "Images\salads\tuna.PNG", 1),
+
+	("GRILLED CHICKEN", "Great tasting chicken marinated with a variety of spices", 4, 15.59, "Images\chicken meals\grilled chicken.png", 2),
+	("BARBECUE WINGS", "Great tasting chicken marinated with a variety of spices", 6, 7.65, "Images\chicken meals\barbecue chicken wings.png", 2),
+	("LEMON CHICKEN", "Great tasting chicken marinated with a variety of spices", 1, 11.99, "Images\chicken meals\lemon chicken.png", 2),
+
+	("CHINESE BEEF", "Specialy marinated with spices from the meditaranean", 3, 12.29, "Images\beef\chinese beef.png", 3),
+	("RIBEYE STEAK", "Specialy marinated with spices from the meditaranean", 6, 18.05, "Images\beef\ribeye steak.png", 3),
+
+	("BLUEBERRY-BALSAMIC LAMB CHOPS", "Specialy marinated with spices from the meditaranean", 4, 16.69, "Images\lamb\lamb chops blueberry-balsamic.png", 4),
+
+	("GOURMET ROAST PORK", "Crispy pork with plenty of flavour.", 5, 17.59, "Images\pork\gourmet roast pork.png", 5),
+	("PORK RIBS", "Salted pork with plenty of flavour.", 3, 9.70, "Images\pork\pork ribs.png", 5),
+	("PORK & VEGETABLES", "Succulent pork with plenty of flavour.", 2, 12.19, "Images\pork\pork veg.png", 5),
+
+	("COCONUT RICE", "Rich in nutrient with plenty of flavour.", 6, 12.50, "Images\rice\coconut rice.png", 6),
+	("FRIED RICE", "Rich in nutrient with plenty of flavour.", 2, 22.50, "Images\rice\fried rice.png", 6),
+	("JOLLOF RICE", "Rich in nutrient with plenty of flavour.", 3, 7.50, "Images\rice\jollof rice.png", 6),
+
+	("BAKED FETA PASTA", "Rich in nutrient with plenty of flavour.", 3, 5.90, "Images\pasta\baked feta pasta.png", 7),
+	("TROTTOLE PASTA", "Rich in nutrient with plenty of flavour.", 2, 9.99, "Images\pasta\trottole pasta.png", 7),
+
+	("ROASTED SALMON QUINOA", "Healthy food at it's tastiest.", 2, 8.75, "Images\quinoa\roasted salmon quinoa.png", 8),
+
+	("SESAME PRAWNS ON TOAST", "Covered in prawns", 2, 7.35,"Images\sides\sesame prawn on toast.png", 9),
+	("VEGETABLE SPRING ROLLS", "Awesome for vegetarians", 3, 4.65, "Images\sides\veg spring rolls.png", 9),
+
+	("CHOCOLATE CAKE", "Pleasure for sweet lovers", 6, 6.69, "Images\deserts\choc cake.png", 10),
+	("LEMON MERINGUE PIE", "Pleasure for sweet lovers", 3, 9.69, "Images\deserts\lemon meringuePie.png", 10),
+	("MIXED-BERRY MOUSSE", "Pleasure for sweet lovers", 2, 7.69, "Images\deserts\mixedBerry mousse.png", 10),
+
+	("MAINE ORANGE BOTTLE", "Great thirst quenching drink", 4, 2.05, "Images\drinks\bottle_01.png", 11),
+	("MAINE LEMONADE BOTTLE", "Great thirst quenching drink", 2, 1.85, "Images\drinks\bottle_02.png", 11),
+	("FANTA STRAWBERRY CAN", "Great thirst quenching drink", 1, 1.55, "Images\drinks\can_01.png", 11),
+
+	("DEAL ONE", "Spoilt for choice.", 3, 22.90, "Images\discounts\disc_01.png", 12),
+	("DEAL TWO", "Spoilt for choice.", 2, 24.50, "Images\discounts\disc_02.png", 12),
+	("DEAL DEAL", "Spoilt for choice.", 1, 19.35, "Images\discounts\disc_03.png", 12),
+	("DEAL FOUR", "Spoilt for choice.", 3, 17.99, "Images\discounts\disc_04.png", 12)
+	"""
+)
+
+
+# CUSTOMER ACCOUNTS
+db_cur.execute(
+	"""
+	INSERT INTO customerAccounts
+	(nameFirst, nameLast, dob, email, password, addressBill, addressDelivery)
+	VALUES
+	("Dayo", "Ranger", "2001-10-15", "dayo.ranger@gmail.com", "DayoRanger01", "132 Bury Road, London, E1 5CE", "132 Bury Road, London, E1 5CE"),
+	("Jordan", "Dasilva", "1989-05-10", "jordan123@hotmail.com", "JordanDasilva89", "333 English Street, London, E1 6DD", "333 English Street, London, E1 6DD"),
+	("Leon", "Parker", "1981-07-23", "l.parker333@hotmail.co.uk", "LeonParker81", "12 Gorilla Road, London E3 FD5", "12 Gorilla Road, London E3 5FD"),
+	("Daniel", "Christian", "2004-11-02", "danielchrist69@gmail.com", "DanielChrist04", "72 Roses Lane, London, E5 7ER", "72 Roses Lane, London, E5 7ER"),
+	("Alex", "Lawmaker", "1998-03-28", "alexmrlaw@gmail.com", "AlexLaw98", "1 Platinum Road, London, E4 2FF", "1 Platinum Road, London, E4 2FF")
+	"""
+)
+
+
+# ORDERS
+db_cur.execute(
+	"""
+	INSERT INTO orders
+	(items, price, payMethod, orderDate, orderTime, addressDelivered, accountID)
+	VALUES
+	("GOURMET ROAST PORK, SESAME PRAWNS ON TOAST, MAINE LEMONADE BOTTLE", "43.25", "Debit Card x0345", "2023-09-20", "22:09:22", "132 Bury Road, London, E1 5CE", 1),
+	("RIBEYE STEAK, MIXED-BERRY MOUSSE, FANTA STRAWBERRY CAN", "30.00", "Cash", "2023-09-30", "17:33:01", "12 Gorilla Road, London E3 5FD", 3),
+	("ROASTED SALMON QUINOA", "11.75", "Credit Card x4567", "2023-10-02", "14:12:52", "132 Bury Road, London, E1 5CE", 1),
+	("ARAGULA SALAD, FRIED RICE, CHOCOLATE CAKE, MAINE LEMONADE BOTTLE", "40.99", "Credit Card x3999", "2023-019-07", "13:13:13", "12 Gorilla Road, London E3 5FD", 3),
+	("CHINESE BEEF, SESAME PRAWNS ON TOAST", "32.70", "Debit Card x0345", "2023-10-10", "20:19:22", "1 Platinum Road, London, E4 2FF", 5),
+	("ROASTED SALMON QUINOA, CHOCOLATE CAKE", "17.50", "Cash", "2023-10-11", "15:20:09", "", 0)
+	"""
+)
+
+
+# WEBSITE EDIT HOME PAGE
+db_cur.execute(
+	""" 
+	INSERT INTO webSite_editHome
+	(favPos, favID)
+    VALUES
+	(1, 2), (2, 7), (3, 16), (4, 23), (5, 29)
+	"""
+)
+
+
+---------------------------------------------------------------------------------
+
+# WEBSITE EDIT HELP & CONTACT PAGE
+db_cur.execute(
+	""" 
+	INSERT INTO webSite_editHelp
+	(openTimes, openDays, address, phone, email) VALUES(?,?,?,?,?)
+	""", ("12am to 12pm", "Monday - Saturday", 
+	"120 Fashion Street\nLondon\nE1 6PX\nUK", "+44 20 5636 3956", "support@dreamchef_restaurant.co.uk")
+)
+
+
+# WEBSITE EDIT HELP & CONTACT PAGE
+db_cur.execute(
+	""" 
+	INSERT INTO webSite_editHelp
+	(openTimes, openDays, address, phone, email) VALUES("12am to 12pm", "Monday - Saturday", 
+	"120 Fashion Street\nLondon\nE1 6PX\nUK", "+44 20 5636 3956", "support@dreamchef_restaurant.co.uk")
+	"""
+)

@@ -1,0 +1,8 @@
+* HELP PAGE SECTION EDIT MENU
+1:  Days Open
+2:  Time Open
+3:  Address
+4:  Telephone
+5:  Email
+6:  Back to Main Menu
+0:  Exit

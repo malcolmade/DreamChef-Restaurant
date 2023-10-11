@@ -1,0 +1,7 @@
+* DELETE CUSTOMER ACCOUNT MENU
+1:  Delete Account by ID
+2:  Delete Account by Name
+3:  Delete Account by Email
+4:  Delete All Customer Accounts
+5:  Back to Main Menu
+0:  Exit

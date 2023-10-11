@@ -1,0 +1,6 @@
+* DELETE GROUP MENU
+1:  Delete by ID
+2:  Delete by Name
+3:  Delete All Groups
+4:  Back to Main Menu
+0:  Exit

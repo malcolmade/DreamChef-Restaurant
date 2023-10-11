@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamChef Checkout-Payments</title>
+        <script src="https://kit.fontawesome.com/42cec204b0.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/dreamChef.css">
+    </head>
+
+    <body>
+        <!-- -->
+        <form id="checkoutPay">
+            <div class="container">
+                <p class="title title-main title-uLine">COMPLETE ORDER</p>
+                <br><br>
+                <div class="checkoutPay-cards">
+                    <div>
+                        <!-- Payment Method -->
+                        <div class="checkoutPayMethod-card container-border">
+                            <p class="title title-main5">Payment Method</p>
+                            <br>
+                            <!-- Payment Method -->
+                            <div>
+                                <input type="radio" id="payMethod_cash" name="pay-methods" value="Pay with cash">
+                                    <label for="payMethod_cash">Pay with cash</label>
+                                <br><br><hr><br>
+                                <input type="radio" id="payMethod_card" name="pay-methods" value="Pay with credit or debit card">
+                                    <label for="payMethod_card">Pay with credit or debit card</label>
+                                <br>
+                                <img src="images/payCards.png" alt="credit-debit card">
+                            </div>
+                            <br>
+                            <!-- card number -->
+                                <label for="card_number">Card number<i>*</i></label><br>
+                            <input type="text" id="card_number" name="card_number" class="inputSize1">
+                            <br><br>
+                            <!-- card expiry date -->
+                            <p">Expiry date<i>*</i></p>
+                            <!-- month -->
+                            <select name="expiry_month" id="expiry_month">
+                                <option selected disabled>MM</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                            </select>
+                            <!-- year -->
+                            <select name="expiry_year" id="expiry_year">
+                                <option selected disabled>YY</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                            <br><br>
+                            <!-- security number -->
+                            <div>
+                                <label for="card_number">Security number<i>*</i></label>
+                                <div class="checkoutPay-cvv">
+                                    <input type="text" id="cvv" name="cvv" class="inputSize2" maxlength="3">
+                                    <img src="images/payCard-Back.png" alt="cvv">
+                                </div>
+                            </div>
+                            <br>
+                            <!-- card holder name -->
+                                <label for="card_name">Cardholder name<i>*</i></label><br>
+                            <input type="text" id="card_name" name="card_name" class="inputSize1">
+                            <br><br><br>
+                            <!-- billing address -->
+                            <input type="checkbox" id="address_bill" name="address_bill" value="Bike">
+                                <label for="address_bill"> Billing address:</label>
+                            <b id="address_billing"> 123 fashion street, london ec1 9pp</b>
+                        </div>
+                        <!-- -->
+                        <div class="checkoutPayMethod-btn">
+                            <input type="button" id="btn_orderPay" class="btn btn-primary1" value="Order & Pay">
+                        </div>
+                    </div>
+                    <!-- Order  style="display: flex; justify-content: center"-->
+                    <div class="basket-rightDisplay ">
+                        <div class="tab-left container-border">
+                            <div class="content-pad">
+                                <p class="title title-main4">Your Order</p>
+                                <div class="card-rowContent">
+                                    <div class="card-left">
+                                        <p id="orderItem_name01">Smoky Beef Sausage</p>
+                                        <p id="orderItem_name02">chips</p>
+                                        <p id="orderItem_name03">egg nog</p>
+                                    </div>
+                                    <div class="tab-right">
+                                        <p id="orderItem_price01">£19.69</p>
+                                        <p id="orderItem_price02">£12.00</p>
+                                        <p id="orderItem_price03">£3.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- total -->
+                            <div class="content-pad">
+                                <div class="card-rowContent">
+                                    <div class="card-left">
+                                        <p>Subtotal</p>
+                                        <p>Delivery Fee</p>
+                                        <p class="total title title-main4">Total</p>
+                                    </div>
+                                    <div class="tab-right">
+                                        <p id="basket_deliveryFee">£9.69</p>
+                                        <p id="basket_serviceFraud">£0.00</p>
+                                        <p id="basket_total" class="total title title-main4 tab-right">£44.30</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- delivery info -->
+                            <div>
+                                <small class="delivery-info">
+                                    <b id="icon_delivery"><i class="fa-solid fa-motorcycle"></i></b>
+                                    <b id="icon_collection" hidden><i class="fa fa-shopping-bag" aria-hidden="true"></i></b>
+                                    <p id="order_type">Delivery Time: <b id="order_deliveryTime">14:25</b></p>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
+
+
+        

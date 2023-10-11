@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamChef Basket</title>
+        <script src="https://kit.fontawesome.com/42cec204b0.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/dreamChef.css">
+    </head>
+
+    <body>
+        <!-- nav heading -->
+        <nav id="nav_basket">
+            <div class="container">
+                <div class="nav-basket nav-sort">
+                    <img class="logo" src="images/DreamChef_logo.png" alt="Logo">
+                    <div class="navBasket-contents">
+                        <p id="navBasket_order" class="title-uLine">ORDER</p>
+                        <p id="navBasket_details">PERSONAL DETAILS</p>
+                        <p id="navBasket_pay">PAYMENT</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- -->
+        <form id="basket">
+            <div class="container">
+                <p class="title title-main title-uLine">YOUR ORDER</p>
+                <div class="basket-contents -gap">
+                    <!-- LEFT DISPLAY -->
+                    <div class="basket-leftDisplay">
+                        <section class="tab-left content-pad">
+                            <div class="basketItem_card">
+                                <div class="card-rowContent">
+                                    <p id="basketItem_title" class="title title-main5">Lemon Chicken</p>
+                                    <p id="basketItem_price" class="tab-right">£12.99</p>
+                                </div>
+                                <div class="card-rowContent content-pad">
+                                    <div>
+                                        <span>
+                                            <a href="" class=""> Edit</a>
+                                            <a href="" class=""> Remove</a>
+                                        </span>
+                                    </div>
+                                    <div class="tab-right">
+                                        <i class="fa-solid fa-circle-minus"></i>
+                                        <input type="text" id="item_quantity" value="1">
+                                        <i class="fa-solid fa-circle-plus"></i>
+                                    </div>
+                                </div>
+                                <hr><br><br>
+                            </div>
+                            <div class="basketItem_card">
+                                <div class="card-rowContent">
+                                    <p id="basketItem_title" class="title title-main5">Beef Stew with Carrots</p>
+                                    <p id="basketItem_price" class="tab-right">£5.35</p>
+                                </div>
+                                <div class="card-rowContent content-pad">
+                                    <div>
+                                        <span>
+                                            <a href="" class=""> Edit</a>
+                                            <a href="" class=""> Remove</a>
+                                        </span>
+                                    </div>
+                                    <div class="tab-right">
+                                        <i class="fa-solid fa-circle-minus"></i>
+                                        <input type="text" id="item_quantity" value="1">
+                                        <i class="fa-solid fa-circle-plus"></i>
+                                    </div>
+                                </div>
+                                <hr><br><br>
+                            </div>
+                            <div class="basketItem_card">
+                                <div class="card-rowContent">
+                                    <p id="basketItem_title" class="title title-main5">Bacon Pasta</p>
+                                    <p id="basketItem_price" class="tab-right">£7.99</p>
+                                </div>
+                                <div class="card-rowContent content-pad">
+                                    <div>
+                                        <span>
+                                            <a href="" class=""> Edit</a>
+                                            <a href="" class=""> Remove</a>
+                                        </span>
+                                    </div>
+                                    <div class="tab-right">
+                                        <i class="fa-solid fa-circle-minus"></i>
+                                        <input type="text" id="item_quantity" value="1">
+                                        <i class="fa-solid fa-circle-plus"></i>
+                                    </div>
+                                </div>
+                                <hr><br><br>
+                            </div>
+                            <div class="basket-back">
+                                <a href="./menu.html">
+                                    <input type="button" id="btn_basketBack" class="btn btn-secondary2" value="BACK TO MENU">
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- vertical line -->
+                    <div class="vLine"></div>
+                    <!-- RIGHT DISPLAY -->
+                    <div class="basket-rightDisplay">
+                        <div class="tab-left">
+                            <!-- delivery info -->
+                            <div class="card-rowContent content-pad">
+                                <div>
+                                    <p class="title title-main5">DELIVERING TO:</p>
+                                    <p id="basket_deliveryAddress">246 Fashion Street</p>
+                                    <p id="basket_deliveryTime">Delivery time: 25 - 30 mins</p>
+                                </div>
+                                <a href="" class="tab-right">Change</a>
+                            </div>
+                            <hr>
+                            <!-- order summary -->
+                            <div class="content-pad">
+                                <p class="title title-main5">ORDER SUMMARY</p>
+                                <div class="card-rowContent">
+                                    <div class="card-left">
+                                        <p>Delivery Fee</p>
+                                        <p>Service Extortion</p>
+                                        <p>Subtotal</p>
+                                    </div>
+                                    <div class="tab-right">
+                                        <p id="basket_deliveryFee">£9.69</p>
+                                        <p id="basket_serviceFraud">£0.00</p>
+                                        <p id="basket_subTotal">£39.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- total -->
+                            <div class="card-rowContent content-pad">
+                                <b class="card-left title title-main4">Total</b>
+                                <b id="basket_total" class="title title-main4 tab-right">£44.30</b>
+                            </div>
+                        </div>
+                        <hr class="hr-wide">
+                        <br>
+                        <input type="button" id="btn_basketCheckout" class="btn btn-primary1" value="CHECKOUT">
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+
+        <!-- Footer  -->
+        <footer id="footer">
+            <div class="footer-main">
+                <div class="footer-main1">
+                    <p>Got a question?</p>
+                    <a href="./contact-help.html" class="btn btn-primary2"> CONTACT US </a>
+                </div>
+                <div class="footer-main2 container">
+                    <!-- links column 1 -->
+                    <div>
+                        <a href="./menu.html">MENU</a><br>
+                        <a href="./menu.html#menu-deals">MENU DEALS</a><br>
+                    </div>
+                    <!-- links column 2 -->
+                    <div>
+                        <a href="#favourites">OUR FAVOURITES</a><br>
+                        <a href="./about.html">ABOUT US</a><br>
+                        <a href="./contact-help.html">HELP & CONTACT</a>
+                    </div>
+                    <!-- social icons column -->
+                    <div class="social">
+                        <div>
+                            <div class="title-footerSocial">FOLLOW US</div>
+                            <div>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="https://www.instragram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <section class="footer-sub container">
+                <div class="footer-sub1">
+                    <div> <img src="images/DreamChef_logoLight.png" alt="Light Logo"> </div>
+                </div>
+                <div class="footer-sub2">
+                    <a href = "./terms.html">Terms and Conditions</a>
+                    <a href = "./cookiesAds_policy.html">Cookies & Ads Policy</a>
+                    <a href = "./privacy.html">Privacy</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

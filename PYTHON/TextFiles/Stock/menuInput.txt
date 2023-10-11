@@ -1,0 +1,48 @@
+NO GROUPS!
+SUCCESSFULLY INSERTED!
+* ADD NEW GROUP
+Enter nothing to leave field unchanged. [Just press ENTER]
+Enter Group Name: 
+Enter Group Description Information: 
+Enter Number of Group's Item's: 
+ID Assigned to Group: 
+Display this Group's Item's? [1 = YES] or [Any other key = NO]: 
+* DISPLAY GROUP
+* DISPLAY GROUPS
+* DELETE GROUP
+* DELETE GROUPS
+* UPDATE GROUP
+SUCCESSFULLY DELETED!
+Enter Group ID: 
+Enter Group Name: 
+Invalid Group ID!
+Invalid Group Name!
+Deleting this Group will also delete all its items! ... Proceed? [1 = YES] or [Any other key = NO]: 
+STOCK-ITEMS ......................
+DELETING ALL GROUPS WILL ALSO DELETE ALL ITEMS! ... Proceed? [1 = YES] or [Any other key = NO]: 
+* ADD NEW ITEM
+SUCCESSFULLY UPDATED
+Enter Item Group ID: 
+Item Group Found ... Proceed!
+Invalid Item Group!!!
+Enter Item Name: 
+Enter Item Description Information: 
+Enter Item Quantity: 
+Enter Item Price: 
+Enter Item Image File Location & Name: 
+Image File Successfully Linked!
+Invalid Image File Location!!!
+ID Assigned to Item: 
+CONFIRM DELETE?  [1 = YES] or [Any other key = NO]: 
+* DISPLAY ITEM
+* DELETE ITEM
+* UPDATE ITEM
+DELETE CANCELLED!
+Enter Item ID: 
+No Items!
+Invalid Item ID!
+Invalid Item Name!
+* DELETE ITEMS
+ is Invalid input!!!
+Enter a valid option from above
+Press any key to proceed

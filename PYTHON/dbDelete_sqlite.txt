@@ -1,0 +1,41 @@
+from connect import *
+
+
+# STOCK (ITEM-GROUPS)
+db_cur.execute(
+	""" 
+	DROP TABLE "stock_itemGroups"
+	"""
+)
+
+
+# STOCK (GROUP-ITEMS)
+db_cur.execute(
+	""" 
+	DROP TABLE "stock_groupItems"
+	"""
+)
+
+
+# CUSTOMER ACCOUNTS
+db_cur.execute(
+	""" 
+	DROP TABLE "customerAccounts"
+	"""
+)
+
+
+# ORDERS
+db_cur.execute(
+	""" 
+	DROP TABLE "orders"
+	"""
+)
+
+
+# WEBSITE EDIT HOME PAGE
+db_cur.execute(
+	""" 
+	DROP TABLE "webSite_editHome"
+	"""
+)

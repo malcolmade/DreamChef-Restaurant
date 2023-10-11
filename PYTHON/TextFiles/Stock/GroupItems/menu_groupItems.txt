@@ -1,0 +1,7 @@
+* STOCK ITEMS MENU
+1:  Display Stock Item
+2:  Add New Item
+3:  Update Existing item
+4:  Delete Item
+5:  Back to Main menu
+0:  Exit

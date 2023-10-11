@@ -1,0 +1,83 @@
+from connect import *
+
+
+# STOCK (ITEM-GROUPS)
+db_cur.execute(
+	""" 
+	CREATE TABLE "stock_itemGroups" (
+		"groupID"	INTEGER UNIQUE,
+		"name"	TEXT,
+		"description"	TEXT,
+		"groupItems"	INTEGER,
+		PRIMARY KEY("groupID" AUTOINCREMENT)
+	)
+	"""
+)
+
+
+# STOCK (GROUP-ITEMS)
+db_cur.execute(
+	""" 
+	CREATE TABLE "stock_groupItems" (
+		"itemID"	INTEGER UNIQUE,
+		"name"	TEXT,
+		"description"	TEXT,
+		"quantity"	INTEGER,
+		"price"	FLOAT,
+		"imgFileDir"	TEXT,
+		"itemGroupID"	INTEGER,
+		PRIMARY KEY("itemID" AUTOINCREMENT)
+		FOREIGN KEY("itemGroupID") REFERENCES "stock_itemGroups"("groupID")
+	)
+	"""
+)
+
+
+# CUSTOMER ACCOUNTS
+db_cur.execute(
+	""" 
+	CREATE TABLE "customerAccounts" (
+		"userID"	INTEGER UNIQUE,
+		"nameFirst"	TEXT,
+		"nameLast"	TEXT,
+		"dob"	DATE,
+		"phone"	TEXT,
+		"email"	TEXT,
+		"password"	TEXT,
+		"addressBill"	TEXT,
+		"addressDelivery"	TEXT,
+		PRIMARY KEY("userID" AUTOINCREMENT)
+	)
+	"""
+)
+
+
+# ORDERS
+db_cur.execute(
+	""" 
+	CREATE TABLE "orders" (
+		"orderID"	INTEGER UNIQUE,
+		"items"	TEXT,
+		"price"	FLOAT,
+		"payMethod"	TEXT,
+		"orderDate"	DATE,
+		"orderTime"	TIME,
+		"addressDelivered"	TEXT,
+		"accountID"	INTEGER,
+		PRIMARY KEY("orderID" AUTOINCREMENT)
+		FOREIGN KEY("accountID") REFERENCES "customerAccounts"("userID")
+	)
+	"""
+)
+
+
+# WEBSITE EDIT HOME PAGE
+db_cur.execute(
+	""" 
+	CREATE TABLE "webSite_editHome" (
+		"favPos"	INTEGER UNIQUE,
+		"favID"	INTEGER UNIQUE,
+		FOREIGN KEY("favID") REFERENCES "stock_groupItems"("itemID")
+	)
+	"""
+)

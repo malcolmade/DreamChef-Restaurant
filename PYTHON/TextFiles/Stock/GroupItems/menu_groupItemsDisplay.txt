@@ -1,0 +1,6 @@
+* DISPLAY ITEM MENU
+1:  Display Item by ID
+2:  Display Item by Name
+3:  Display All Items
+4:  Back to Main menu
+0:  Exit

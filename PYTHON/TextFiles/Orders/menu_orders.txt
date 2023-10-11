@@ -1,0 +1,5 @@
+* ORDERS MENU
+1:  Display Orders
+2:  Delete Orders
+3:  Back to Main Menu
+0:  Exit

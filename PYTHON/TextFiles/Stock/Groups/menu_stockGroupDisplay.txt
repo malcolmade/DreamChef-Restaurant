@@ -1,0 +1,6 @@
+* DISPLAY MENU
+1:  Display Group by ID
+2:  Display Group by Name
+3:  Display All Groups
+4:  Back to Main menu
+0:  Exit

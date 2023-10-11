@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamChef Home</title>
+        <script src="https://kit.fontawesome.com/42cec204b0.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/dreamChef.css">
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <nav id="nav">
+            <!-- nav bar upper section -->
+            <section id="nav-main">
+                <div class="container -navView">
+                    <img class="logo" src="images/DreamChef_logo.png" alt="Logo">
+                    <div>
+                        <ul>
+                            <li><a href="./menu.html">MENU</a></li>
+                            <li><a href="./menu.html#menu-deals">DEALS</a></li>
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><input type="button" id="order_btn" class="btn btn-primary1" value="ORDER NOW"></li>
+                        </ul>
+                    </div>
+                    <div id="signIn-bsk01">
+                        <ul>
+                            <li><a href="./signIn.html" id="sign_in"><i class="fa fa-person"></i> SIGN IN</a></li>
+                            <li><a href="" id="basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0.00</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="signIn-bsk02">
+                    <ul>
+                        <li><a href="./signIn.html" id="sign_in"><i class="fa fa-person"></i> SIGN IN</a></li>
+                        <li><a href="" id="basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0.00</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- nav bar lower section-->
+            <section id="nav-sub">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <div class="navSub-greetn">
+                                <p class="title title-main">WELCOME TO DREAMCHEF</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navSub-orderType">
+                                <span>
+                                    <input type="button" id="btn_orderCollect" class="btn btn-secondary1" value="ORDER FOR COLLECTION">
+                                </span>
+                                <span>
+                                    <input type="button" id="btn_orderDeliver" class="btn btn-secondary1" value="ORDER FOR DELIVERY">
+                                </span>
+                            </div>
+                            <div class="navSub-adrSet">
+                                <input type="button" id="btn_changeAdr" class="btn btn-secondary2" value="CHANGE">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navSub-adr navSub-adrSet">
+                        <span>
+                            <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                            <a href="" id="address_deliver"><small>126 Fashion street, London E1 6PG</small></a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <div id="disable_div" class="disable-div"></div>
+        </nav>
+        
+        <!-- showcase Main -->
+        <header id="showcase" class="headerBG">
+            <div class="container">
+                <div class="showcase-content">
+                    <a href="./menu.html#salads" id="btn_fav" class="btn btn-primary2">More Details</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Showcase Menu -->
+        <section id="menu-favs">
+            <div class="container">
+                <p id="favourites" class="title title-main1">CUSTOMER FAVOURITES</p>
+                <!-- Showcase Favourites -->
+                <div class="favs-container favs-grid">
+                    <div class="card">
+                        <div id="card-img01" class="card-contents">
+                            <input type="button" id="btn_fav01" class="btn btn-primary1" value=" ORDER NOW ">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card-img02" class="card-contents">
+                            <input type="button" id="btn_fav02" class="btn btn-primary1" value=" ORDER NOW ">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card-img03" class="card-contents">
+                            <input type="button" id="btn_fav03" class="btn btn-primary1" value=" ORDER NOW ">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card-img04" class="card-contents">
+                            <input type="button" id="btn_fav04" class="btn btn-primary1" value=" ORDER NOW ">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card-img05" class="card-contents">
+                            <input type="button" id="btn_fav05" class="btn btn-primary1" value=" ORDER NOW ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="discounts" class="title title-main2">CHECK OUT TODAY'S DISCOUNTED SELECTIONS</p>
+            <b class="title title-main4">Finest salads of all variety brought to you by our salad specialized chefs.</b>
+            <!-- Showcase Discounts -->
+            <div class="disc-container">
+                <div class="disc-contents disc-size"></div>
+            </div>
+        </section>
+
+        <!-- Footer  -->
+        <footer id="footer">
+            <div class="footer-main">
+                <div class="footer-main1">
+                    <p>Got a question?</p>
+                    <a href="./contact-help.html" class="btn btn-primary2"> CONTACT US </a>
+                </div>
+                <div class="footer-main2 container">
+                    <!-- links column 1 -->
+                    <div>
+                        <a href="./menu.html">MENU</a><br>
+                        <a href="./menu.html#menu-deals">MENU DEALS</a><br>
+                        <a href="#">ORDER</a>
+                    </div>
+                    <!-- links column 2 -->
+                    <div>
+                        <a href="#favourites">OUR FAVOURITES</a><br>
+                        <a href="./about.html">ABOUT US</a><br>
+                        <a href="./contact-help.html">HELP & CONTACT</a>
+                    </div>
+                    <!-- social icons column -->
+                    <div class="social">
+                        <div>
+                            <div class="title-footerSocial">FOLLOW US</div>
+                            <div>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="https://www.instragram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <section class="footer-sub container">
+                <div class="footer-sub1">
+                    <div> <img src="images/DreamChef_logoLight.png" alt="Light Logo"> </div>
+                </div>
+                <div class="footer-sub2">
+                    <a href = "./terms.html">Terms and Conditions</a>
+                    <a href = "./cookiesAds_policy.html">Cookies & Ads Policy</a>
+                    <a href = "./privacy.html">Privacy</a>
+                </div>
+            </section>
+        </footer>
+
+        
+        
+
+        <!-- Popups -->
+
+        <!-- Popup Order Type -->
+        <div id="popup_orderType" hidden>
+            <div class="container-popup">
+                <div class="popupSignIn-card">
+                    <div class="popupSignIn-contents">
+                        <div class="upper-card">
+                            <div class="close-win">
+                                <i class="fa fa-window-close fa fa-2x fa1" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="lower-card">
+                            <div>
+                                <p class="title title-main3 title-uLine">PLACE YOUR ORDER</p>
+                            </div>
+                            <div>
+                                <br><br>
+                                <input type="button" id="btn_orderDelivery" class="btn btn-primary1" value="DELIVERY ORDER">
+                                <br><br><hr><hr><br>
+                                <input type="button" id="btn_orderCollection" class="btn btn-secondary2" value="COLLECTION ORDER">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Popup Add To Basket -->
+        <div id="popup_add2Basket" hidden>
+            <div class="container-popup">
+                <div class="popupSignIn-card">
+                    <div class="popupSignIn-contents">
+                        <div class="close-win">
+                            <i class="fa fa-window-close fa fa-2x window-close fa2" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <img src="./Images/chicken meals/lemon chicken.png" alt="Lemon Chicken" id="img_add2BasketItem">
+                        </div>
+                        <div>
+                            <div>
+                                <p id="hd_add2BasketItem" class="title title-main4">Lemon Chicken</p>
+                            </div>
+                            <div>
+                                <p id="info_add2BasketItem" class="title title-main5">Served with chips or rice</p>
+                            </div>
+                            <br>
+                        </div>
+                        <div>
+                            <small class="add2Basket-menuOption">
+                                <div class="tab2">
+                                    <p class="title title-main5">SELECT YOUR OPTIONS</p>
+                                </div>
+                                <div id="menuOption_1" class="menuOption-card">
+                                    <p class="title title-main5">Chips</p>
+                                </div>
+                                <div id="menuOption_2" class="menuOption-card">
+                                    <p class="title title-main5">Rice</p>
+                                </div>
+                            </small>
+                            <div>
+                                <br><br>
+                                <input type="button" id="btn_back" class="btn btn-secondary2" value="BACK TO MENU" style="width: 45%;">
+                                &nbsp;
+                                <input type="button" id="btn_add2Basket" class="btn btn-primary1" value="ADD TO ORDER" style="width: 45%; font-size: 80%;">
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Popup Added To Basket Confirmation -->
+        <div id="popup_basketItemAdded" hidden>
+            <div class="container-popup">
+                <div class="popupSignIn-card">
+                    <div class="popupSignIn-contents">
+                        <div class="popup-basketItemAdded">
+                            <div>
+                                <p class="title title-main4">
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                    ADDED TO BASKET
+                                </p>
+                            </div>
+                            <div class="section-mid">
+                                <div>
+                                    <img src="./Images/chicken meals/lemon chicken.png" alt="Lemon Chicken" id="img_basketAddItem">
+                                </div>
+                                <div>
+                                    <p id="hd_basketItemAdded" class="title title-main4">Lemon Chicken</p>
+                                    <div class="tab2">
+                                        <p id="basketItemAdded_option" class="title title-main5" >Chips</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="button" id="btn_add2Basket" class="btn btn-primary1" value="PROCEED TO BASKET">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Popup Address -->
+        <div id="popup_deliveryAddress" hidden>
+            <div class="container-popup">
+                <div class="popupSignIn-card">
+                    <div class="popupSignIn-contents">
+                        <div class="upper-card">
+                            <div class="close-win">
+                                <i class="fa fa-window-close fa fa-2x fa1" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="lower-card">
+                            <div>
+                                <p class="title title-main3 title-uLine">DELIVERY ADDRESS</p>
+                            </div>
+                            <div style="display: flex; justify-content: center; padding-bottom: 1rem;">
+                                <div style="text-align: left; padding: 0 1rem; margin: auto; max-width: 40vh;">
+                                    <!--
+                                    <label for="post-code">Post Code:<i>*</i></label><br>
+                                    <input type="text" id="post-code" name="post-code" required>
+                                    -->
+
+                                    <!-- google post code finder -->
+                                    <img src="./Images/addressFind.JPG" id="postCode_find" alt="PostCode Finder" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Popup SignIn -->
+        <div id="popup_signIn" hidden>
+            <div class="container-popup">
+                <div class="popupSignIn-card">
+                    <div class="popupSignIn-contents">
+                        <div class="close-win">
+                            <i class="fa fa-window-close fa fa-2x fa2" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <p class="title title-main3 title-uLine">PLACE YOUR ORDER</p>
+                        </div>
+                        <div>
+                            <p class="title title-main4">Please register or sign in to your account to proceed.</p>
+                        </div>
+                        <div>
+                            <br><br><br>
+                            <input type="button" id="btn_checkoutSignIn" class="btn btn-primary1" value="SIGN IN">
+                            <br><br><hr><hr><br>
+                            <input type="button" id="btn_checkoutRegister" class="btn btn-secondary2" value="REGISTER">
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- POPUP GUIDE -->
+<!--
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+-->
+        <script src="JS/DreamChef.js"></script>
+    </body>
+</html>

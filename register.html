@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamChef Register</title>
+        <script src="https://kit.fontawesome.com/42cec204b0.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/dreamChef.css">
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <nav id="nav">
+            <!-- nav bar upper section -->
+            <section id="nav-main">
+                <div class="container -navView">
+                    <img class="logo" src="images/DreamChef_logo.png" alt="Logo">
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./menu.html">MENU</a></li>
+                            <li><a href="./menu.html#menu-deals">DEALS</a></li>
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><input type="button" id="btn_order" class="btn btn-primary1" value="ORDER NOW"></li>
+                        </ul>
+                    </div>
+                    <div id="signIn-bsk01">
+                        <ul>
+                            <li><a href="./signIn.html" id="sign_in"><i class="fa fa-person"></i> SIGN IN</a></li>
+                            <li><a href="" id="basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0.00</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="signIn-bsk02">
+                    <ul>
+                        <li><a href="./signIn.html" id="sign_in"><i class="fa fa-person"></i> SIGN IN</a></li>
+                        <li><a href="" id="basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0.00</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- nav bar lower section-->
+            <section id="nav-sub">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <div class="navSub-greetn">
+                                <p class="title title-main">WELCOME TO DREAMCHEF</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navSub-orderType">
+                                <span>
+                                    <input type="button" id="btn_orderCollect" class="btn btn-secondary1" value="ORDER FOR COLLECTION">
+                                </span>
+                                <span>
+                                    <input type="button" id="btn_orderDeliver" class="btn btn-secondary1" value="ORDER FOR DELIVERY">
+                                </span>
+                            </div>
+                            <div class="navSub-adrSet">
+                                <input type="button" id="btn_changeAdr" class="btn btn-secondary2" value="CHANGE">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navSub-adr navSub-adrSet">
+                        <span>
+                            <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                            <a href="" id="address_deliver"><small>126 Fashion street, London E1 6PG</small></a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </nav>
+
+        <!-- -->
+        <form id="register">
+            <div class="container">
+                <p class="title title-main title-uLine">REGISTER</p>
+                <div class="register-pg">
+                    <div class="basket-contents -gap bsk-view">
+                        <div class="checkout-cardLeft">
+                            <!-- First name -->
+                            <p><label for="name_first">First name<i>*</i></label></p>
+                            <input type="text" id="name_first" name="name_first" required class="chkOut-input chkOut-input1">
+                            <br><br>
+                            <!-- Phone Number -->
+                            <label for="phone-areaCodes">Phone number<i>*</i></label><br>
+                            <span>
+                                <select name="phone-areaCodes" id="phone-areaCodes" class="chkOut-input">
+                                    <option selected disabled>UK</option>
+                                    <option value="+44">+44</option>
+                                    <option value="+44">+45</option>
+                                    <option value="+44">+46</option>
+                                    <option value="+44">+47</option>
+                                    <option value="+44">+48</option>
+                                </select>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="chkOut-input chkOut-input2">
+                            </span>
+                            <br><br>
+                            <!-- password -->
+                            <label for="pwd">Password<i>*</i></label><br>
+                            <input type="password" id="pwd" name="pwd" required class="chkOut-input chkOut-input1">
+                            <br><br>
+                            <!-- email -->
+                            <label for="email">Email<i>*</i></label><br>
+                            <input type="email" id="email" name="email" required class="chkOut-input chkOut-input1">
+                        </div>
+                        <div class="checkout-cardLeft">
+                            <!-- Last name -->
+                            <label for="name_last">Last name<i>*</i></label><br>
+                            <input type="text" id="name_last" name="name_last" required class="chkOut-input chkOut-input1">
+                            <br><br>
+                            <!-- birth date -->
+                            <label for="birthday">Date of birth:<i>*</i></label>
+                            <br>
+                            <input type="date" id="birthday" name="birthday">
+                            <br><br>
+                            <!-- confirm password -->
+                            <label for="pwd_confirm">Confirm Password<i>*</i></label><br>
+                            <input type="password" id="pwd_confirm" name="pwd_confirm" required class="chkOut-input chkOut-input1">
+                            <br><br>
+                            <!-- address -->
+                            <label for="address">Address<i>*</i></label><br>
+                            <input type="text" id="address" name="address" required class="chkOut-input chkOut-input1">
+                        </div>
+                    </div>
+                    <!-- -->
+                    <section class="registerCard-lower">
+                        <p>Please keep me up to date by:</p>
+                        <!-- checkBox email -->
+                        <input type="checkbox" id="chkBx_email" name="chkBx_email">
+                            <label for="chkBx_email">Email</label>
+                        <!-- checkBox sms-->
+                        &nbsp;&nbsp;
+                        <input type="checkbox" id="chkBx_sms" name="chkBx_sms">
+                            <label for="chkBx_sms">SMS</label>
+                            <br><br>
+                        <!-- privacy and policy -->
+                        <div class="policyTxt">
+                            <input type="checkbox" id="chkBx_policy" name="chkBx_policy" value="">
+                                <label for="chkBx_policy"><small>Tick to agree to Our <b>Privacy Policy</b>, and <b>Terms & Conditions</b>. Also that I am 18 years or older<i>*</i></small></label>
+                        </div>
+                    </section>
+                    <div>
+                        <input type="button" id="btn_accountCreate" class="btn btn-primary1" value=" CREATE ACCOUNT ">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Footer  -->
+        <footer id="footer">
+            <div class="footer-main">
+                <div class="footer-main1">
+                    <p>Got a question?</p>
+                    <a href="./contact-help.html" class="btn btn-primary2"> CONTACT US </a>
+                </div>
+                <div class="footer-main2 container">
+                    <!-- links column 1 -->
+                    <div>
+                        <a href="./menu.html">MENU</a><br>
+                        <a href="./menu.html#menu-deals">MENU DEALS</a><br>
+                        <a href="#">ORDER</a>
+                    </div>
+                    <!-- links column 2 -->
+                    <div>
+                        <a href="#favourites">OUR FAVOURITES</a><br>
+                        <a href="./about.html">ABOUT US</a><br>
+                        <a href="./contact-help.html">HELP & CONTACT</a>
+                    </div>
+                    <!-- social icons column -->
+                    <div class="social">
+                        <div>
+                            <div class="title-footerSocial">FOLLOW US</div>
+                            <div>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="https://www.instragram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <section class="footer-sub container">
+                <div class="footer-sub1">
+                    <div> <img src="images/DreamChef_logoLight.png" alt="Light Logo"> </div>
+                </div>
+                <div class="footer-sub2">
+                    <a href = "./terms.html">Terms and Conditions</a>
+                    <a href = "./cookiesAds_policy.html">Cookies & Ads Policy</a>
+                    <a href = "./privacy.html">Privacy</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+* FAVOURITES .....................
+* ADD NEW FAVOURITE
+
+Enter Favourite Item ID: 
+Enter Favourite Position: 
+Enter Stock Item ID: 
+* UPDATE FAVOURITE
+2
+Enter Favourite Position Number: 
+Enter Replacement Stock ID: 
+
+* DELETE FAVOURITE
+1
+Enter Favourite Position Number to Delete: 
+
+SUCCESSFULLY INSERTED!
+SUCCESSFULLY UPDATED!
+
+INVALID FAVOURITE!
+INVALID FAVOURITE POSITION!
+INVALID ITEM ID!
+Enter Favourite ID: 
+Enter Item's Favourite Position To Update: 
+Enter New Favourite Position: 
+Enter Favourite Position Of Item to Update: 
+Invalid Favourite ID!
+FAVOURITES IS FULL!
+FAVOURITE ALREADY EXITS!
+FAVOURITE POSITION UNAVAILABLE!
+OUT OF RANGE! [1 - 5]
+Enter 'TITLE #1' Update Data: 
+DELETE ACCOUNT? [1 = YES] or [Any other key = NO]: 
+Enter 'TITLE #1 DESCRIPTION' Update Data: 
+SUCCESSFULLY DELETED!
+DELETE CANCELLED!
+Enter 'TITLE #2' Update Data: 
+DUPLICATE ILLEGAL ENTRY!
+Enter 'TITLE #2 DESCRIPTION' Update Data: 
+Enter 'IMAGE FILE LOCATION' Update Data: 
+NO FAVOURITES!
+Enter 'TIME OPEN' Update Data: 
+Enter 'DAYS OPEN' Update Data: 
+Enter 'ADDRESS' Update Data: 
+Enter 'TELEPHONE' Update Data: 
+Enter 'EMAIL' Update Data: 
+ is Invalid input!!!
+Enter a valid option from above
+Press any key to proceed

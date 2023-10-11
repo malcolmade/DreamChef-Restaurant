@@ -1,0 +1,1037 @@
+/* Bricolage_Grotesque & Libre_Baskerville Fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Libre+Baskerville&display=swap');
+
+:root {
+    --color-primary: #7895CB;
+    --color-secondary: #A0BFE0;
+    --color-primaryBG: #4A55A2;
+    --color-secondaryBG: #C5DFF8;
+    --color-light: #f5f5f5;
+    --color-dark: #2e2e2e;
+    --color-alert: rgb(211, 87, 87);
+    --color-myRed: rgb(136, 11, 11);
+    
+    --fontSize-xLarge: 4em;
+    --fontSize-large: 3em;
+    --fontSize-bigger: 2em;
+    --fontSize-normal: 1em;
+    --fontSize-small: .5em;
+
+    --maxWidth-screen1: 1400px;
+    --maxWidth-screen2: 0px;
+    --maxWidth-screen3: 0px;
+    --maxWidth-screen4: 0px;
+}
+
+/* .............................................. */
+
+#disable_div {
+    visibility: hidden;
+}
+
+.disable-div {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index:7;
+    opacity:0.95;
+    background-color: var(--color-dark);
+}
+
+/* .............................................. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+a {
+    color: var(--color-primaryBG);
+    text-decoration: none;
+    padding: 0.75em;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+input[type=text], input[type=email], input[type=tel],
+input[type=date], input[type=password], select { height: 2em; }
+
+#signIn i, #register i, #checkoutPay i, .policyTxt b {color: var(--color-myRed); }
+
+.vLine { border-left: 1.5px solid var(--color-dark); }
+
+ul {
+    align-items: center;
+    list-style: none;
+    padding: 0 rem;
+}
+
+.tab1 { padding-left: 1em; }
+.tab2 { padding-left: 2em; }
+
+/* .............................................. */
+
+.btn {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+.btn:hover { opacity: 0.7; }
+
+#btn_add2Basket {
+    width: 100%;
+    margin: auto;
+}
+
+.btn-primary1 {
+    background-color: var(--color-primaryBG);
+    color: var(--color-secondaryBG);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bolder;
+    height: 2.75em;
+    width: 12em;
+    z-index: 5;
+}
+
+.btn-primary2 {
+    background-color: var(--color-secondaryBG);
+    color: var(--color-dark);
+    width: 8em;
+    height: 3em;
+    opacity: .75;
+    z-index: 3;
+}
+.btn-primary2:hover {
+    text-transform: uppercase;
+    font-weight: bolder;
+    opacity: 1;
+    width: 11em;
+}
+
+.btn-secondary1 {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-weight: bolder;
+    border-radius: .5em;
+    width: 14em;
+    height: 2em;
+    z-index: 3;
+}
+
+.btn-secondary2 {
+    background: none;
+    color: var(--color-dark);
+    width: 12em;
+    height: 2.75em;
+    border: .15em solid;
+    z-index: 3;
+}
+
+#btn_accountCreate { margin: 5em;}
+
+/* .............................................. */
+
+.title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bolder;
+}
+
+.title-main {
+    color: var(--color-primaryBG);
+    font-size: 220%;
+    padding: 3em 0;
+}
+
+.title-main1 {
+    color: var(--color-dark);
+    font-size: 220%;
+    padding: 3em 0;
+}
+
+.title-main2 {
+    color: var(--color-dark);
+    font-size: 250%;
+    padding: 3em 0;
+}
+
+.title-main3 {
+    color: var(--color-dark);
+    font-size: 170%;
+    padding: 3em 0;
+}
+
+.title-main4 {
+    color: var(--color-dark);
+    font-size: 120%;
+    padding: .5em 0;
+}
+
+.title-main5 {
+    color: var(--color-dark);
+    font-size: 100%;
+    padding: .25em 0;
+}
+
+.title-footerSocial {
+    padding: .75rem;
+}
+
+.title-uLine {
+    text-decoration:  underline;
+    text-underline-offset: .5em;
+}
+
+/* .............................................. */
+
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    line-height: 1.5;
+    background-color: var(--color-light);
+    text-align: center;
+    
+}
+
+.container {
+    max-width: var(--maxWidth-screen1);
+    margin: auto;
+    overflow: hidden;
+}
+
+.container img { width: 100%; }
+
+/* .............................................. */
+
+
+#nav {
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+
+#nav-main { background-color: var(--color-dark); }
+
+#nav-main .container {
+    display: grid;
+    align-items: center;
+    padding: 2em 1em 2em 0em;
+}
+
+#nav-main .logo {
+    width: 120px;
+    margin-left: 5em;
+}
+
+#nav-main ul {
+    display: flex;
+    justify-self: end;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-main ul li a {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#nav-main ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: .5em;
+    text-decoration-thickness: .2em;
+    color: var(--color-primaryBG);
+}
+
+/* .............................................. */
+
+#nav-sub { background-color: var(--color-secondaryBG); }
+
+#nav-sub .container { padding: 0; }
+
+#nav-sub ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+}
+
+.navSub-adr>span>a {
+    color: var(--color-dark);
+    padding: .1em;
+}
+
+.navSub-adr>span>a:hover { color: var(--color-primaryBG); }
+
+.navSub-null { height: 6vh; }
+
+.navSub-greetn .title-main { padding: 1em 0 0; }
+
+/* .............................................. */
+
+.nav-basket {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 1em 2em 0em;
+}
+
+.nav-basket .logo {
+    width: 100px;
+}
+
+.navBasket-contents {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .............................................. */
+
+.headerBG {
+    background-color: var(--color-dark);
+    padding: 2em;
+    position: relative;
+}
+
+.headerBG::before {
+    content: '';
+    background: url(/Images/backGround/showcase_mainBG.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.headerBG.container-header {
+    z-index: 2;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase .showcase-content {
+    z-index: 1;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .............................................. */
+
+#menu-favs {
+    content: '';
+    background: url(/Images/backGround/BG\ showcase_favs.png) no-repeat center center/cover;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.favs-container {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 8em;
+    opacity: .75;
+}
+
+.favs-container .card { padding: 3rem; }
+
+.favs-container .card:hover {
+    width: 175%;
+    opacity: 1;
+    z-index: 2;
+    padding-left: 0;
+    padding-right: 28em;
+}
+
+.disc-container { padding: 0 12em 12em; width: 100%;}
+
+.disc-contents {
+    content: '';
+    background: url(/Images/discounts/BG\ discounts.png) no-repeat center center/cover;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    opacity: .55;
+}
+
+#menu-favs .card-contents input {width: 100%; }
+
+#menu-favs .card-contents {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 24em;
+    opacity: 0.75;
+}
+
+#card-img01 { background-image: url(/Images/favs/fav01.png); }
+#card-img02 { background-image: url(/Images/favs/fav02.png); }
+#card-img03 { background-image: url(/Images/favs/fav03.png); }
+#card-img04 { background-image: url(/Images/favs/fav04.png); }
+#card-img05 { background-image: url(/Images/favs/fav05.png); }
+
+/* .............................................. */
+
+.aboutCard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+    margin: auto;
+    text-align: left;
+}
+
+.aboutCard-left {
+    width: 46%;
+    margin: auto;
+}
+
+.aboutCard-right {
+    width: 46%;
+    margin: auto;
+    padding-top: 1em 0 1em;
+}
+
+#img_about {
+    background-image: url(/Images/backGround/about_us/aboutUs.PNG);
+    background-color: var(--color-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.aboutCard-spc {
+    padding-bottom: 2em;
+}
+
+/* .............................................. */
+
+.contactHelp-contents {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 1em;
+}
+
+#contact_help .social>div a {
+    padding: 0 2em;
+}
+
+.contactHelp-social {
+    grid-column: 1/ span 3;
+    padding: 8em 0 2em;
+    margin: auto;
+}
+
+.contactHelp-lowHeaderBG {
+    background-color: var(--color-dark);
+    padding: 2em;
+    position: relative;
+    height: 35vh;
+}
+
+.contactHelp-lowHeaderBG::before {
+    content: '';
+    background: url(/Images/backGround/contact_help/contact_map.PNG) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+}
+
+/* .................................................................... */
+
+.basket-leftDisplay {
+    width: 23em;
+}
+
+.basketContents-split {
+    width: 1em;
+}
+
+.basket-rightDisplay {
+    width: 21em;
+}
+
+.card-rowContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tab-left {
+    text-align: left;
+}
+
+.card-rowContent input { width: 2rem;}
+
+.tab-right {
+    text-align: right;
+}
+
+.content-sub {
+    padding-left: 1em;
+}
+
+.content-pad {
+    padding: 1em 0;
+}
+
+.fa-circle-minus:hover, .fa-circle-plus:hover { opacity: .6; }
+
+#btn_basketCheckout {width: 100%; }
+
+/* .................................................................... */
+
+.checkout-cardLeft {
+    text-align: left;
+}
+
+.chkOutSecure-container {
+    padding: 0 12em 2em 0;
+    opacity: .7;
+}
+
+.checkout-secure {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    text-align: left;
+    gap: .25em;
+}
+
+.chkOut-input1 { width: 34em; }
+
+.chkOut-input2 { width: 29.75em; }
+
+#checkoutDetails .policyTxt { padding: 4em 0 2em; }
+
+/* .................................................................... */
+
+.container-border {
+    text-align: left;
+    border: var(--color-dark) 1.5px solid;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+.checkoutPayMethod-card {
+    border-bottom: 0;
+}
+
+.checkoutPayMethod-card img {
+    width: 8em;
+    padding-left: 1em;
+}
+
+.checkoutPay-cvv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#checkoutPay .inputSize1 { width: 28em; }
+
+#checkoutPay .inputSize2 { width: 3em; }
+
+#checkoutPay .total { padding-top: 1em; }
+
+#btn_orderPay { margin-top: 4em;}
+
+
+#checkoutPay .delivery-info {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 0;
+    gap: .4em;
+}
+
+/* .................................................................... */
+
+.menuType-card {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 2em 6em;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-sideList {
+    display: flex;
+    position: fixed;
+    text-align: left;
+    line-height: 2.5em;
+    border-right: .2em solid var(--color-dark);
+}
+
+.menuSide-contents {
+    display: flex;
+    padding: 2em 0;
+}
+
+.menuItem-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.menuType-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-size {
+    width: 100%;
+    margin: 1em 0;
+}
+
+#menu .title-pad { padding: 2em 1em 1em; }
+
+.menu-sideList hr { width: 7em; }
+
+/*
+    .menuGroup-card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 3em 1em;
+    }
+/*
+
+/* .................................................................... */
+
+#signIn .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.signIn-card>input { width: 100%; }
+    
+.signReg-btns {width: 40%; }
+
+#signIn hr {
+    width: 90%;
+    margin: auto;
+ }
+
+ /* .................................................................... */
+
+#register .registerCard-lower { padding-top: 3em; }
+
+/* .................................................................... */
+
+#footer { color: var(--color-light); }
+
+#footer .footer-main {
+    display: block;
+    background-color: var(--color-dark);
+    padding: 2em;
+}
+
+#footer .footer-main1 { padding-bottom: 3em; }
+
+#footer .footer-main2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#footer .footer-main2 a { color: var(--color-light); }
+
+#footer .footer-main2 a:hover { color: var(--color-secondaryBG); }
+
+#footer .social {
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+}
+
+#footer .social a:hover { color: var(--color-secondaryBG); }
+
+#footer .footer-sub {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    padding: .5em 0;
+}
+
+#footer .footer-sub .footer-sub1 img { width: 2.5em; }
+
+#footer .footer-sub .footer-sub2 {
+    display: flex;
+    gap: 3em;
+}
+
+#footer .footer-sub2 a { color: var(--color-dark); }
+
+#footer .footer-sub .footer-sub2 a:hover { color: var(--color-primary); }
+
+/* .............................................. */
+
+.container-popup {
+    display: flex;
+    justify-content: right;
+    padding-right: 2em;
+    margin-right: 0;
+}
+
+.popupSignIn-contents {
+    background-color: var(--color-dark);
+    opacity: 0.85;
+}
+
+.popupSignIn-contents>div p { color: var(--color-light); }
+
+#popup_signIn hr {
+    width: 85%;
+    margin: auto;
+ }
+ 
+#btn_checkoutRegister, #btn_back, #btn_orderCollection { color: var(--color-light); }
+
+/* .............................................. */
+
+#popup_orderType .upper-card, #popup_deliveryAddress .upper-card {
+    background-image: url(/Images/beef/mongolian\ beef.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    opacity: 0.85;
+}
+
+#popup_orderType .lower-card {
+    padding-bottom: 2em;
+}
+
+#popup_orderType hr {
+    width: 60%;
+    margin: auto;
+ }
+
+/* .............................................. */
+
+.popup-basketItemAdded {
+    text-align: left;
+    margin: auto;
+    padding: 1em;
+}
+
+#popup_basketItemAdded .section-mid {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+}
+
+#popup_basketItemAdded .section-mid>div img { width: 100%; }
+
+#hd_basketItemAdded { padding-left: .5em; }
+
+/* .............................................. */
+
+#popup_add2Basket img {
+    width: 96%;
+    padding-top: 2em;
+}
+
+#popup_add2Basket .popupSignIn-contents>div p {
+    text-align: left;
+    padding-left: 1em;
+}
+
+#popup_add2Basket .menuOption-card{ padding: .5em 4em; }
+
+/* .............................................. */
+
+.fa-circle-check {
+    color: green;
+    padding-right: .5em;
+    font-size: 1.45em;
+}
+
+.close-win {
+    text-align: right;
+    padding: .5em;
+    margin: 0;
+}
+
+.close-win .fa2 { color: var(--color-light); }
+.close-win .fa1 { color: var(--color-dark); }
+.close-win .fa:hover { color: var(--color-alert); }
+
+/* .................................................................... */
+
+@media (min-width: 0px) and (max-width: 839px) {
+    .-navView { grid-template-columns: 1fr 1fr 1fr; }
+
+    #signIn-bsk01 {visibility: hidden;}
+    #signIn-bsk02 {
+        visibility: visible;
+        display:flex;
+        flex-direction:row;
+        justify-content:right;
+        padding-bottom:1em
+    }
+
+    .navSub-greetn {
+        text-align: left;
+        font-size: 80%;
+    }
+
+    .navSub-orderType {
+        /*display: none;*/
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: .5em;
+    }
+    
+    .navSub-adrSet {
+        display: flex;
+        justify-content: right;
+        display: none;
+    }
+    
+    /*.favs-grid { grid-template-columns: 1fr 1fr; }*/
+
+    .menu-gap { gap: 8em;}
+
+    .menu-pad { padding: .5em; }
+
+    .menuType-carda {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6em 9em;
+    }
+
+    .aboutCard-contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    #about .img-size {
+        height: 15vh;
+    }
+
+    .nav-sort {
+        grid-template-columns: 3fr 8fr 2fr;
+    }
+
+    .basket-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        padding: 1em 0 10em;
+    }
+    
+    .-gap {
+        gap: 6em;
+        padding: 1em 0 10em;
+    }
+
+    .checkoutPay-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: auto;
+        gap: 5em;
+    }
+
+    #signIn .signIn-card {
+        width: 60%;
+        margin: auto;
+        text-align: left;
+        padding: 2em;
+    }
+
+    .popupSignIn-card {
+        background-color: var(--color-secondaryBG);
+        width: 70%;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 1100px) {
+    .-navView { grid-template-columns: 2fr 4fr 2fr; }
+
+    #signIn-bsk01 {visibility: visible;}
+    #signIn-bsk02 {visibility: hidden;}
+
+    .navSub-greetn { text-align: right; }
+
+    .navSub-orderType {
+        /*display: none;*/
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding-right: 1em;
+    }
+    
+    .navSub-adrSet {
+        /*display: flex;*/
+        justify-content: right;
+        display: none;
+    }
+
+    .favs-grid { grid-template-columns: 1fr 1fr 1fr; }
+
+    .menu-gap { gap: 14em;}
+
+    .menu-pad { padding: 1em; }
+
+    .menuType-carda {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em 3em;
+    }
+
+    .aboutCard-contents {
+        display: flex;
+        flex-direction: row;
+        gap: 6em;
+    }
+
+    #about .img-size {
+        height: 20vh;
+    }
+
+    .nav-sort {
+        grid-template-columns: 3fr 6fr 2fr;
+    }
+
+    .basket-contents {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+    
+    .-gap {
+        gap: 2em;
+        padding: 3em 0 10em;
+    }
+
+    .checkoutPay-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2em;
+    }
+
+    .bsk-view {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #signIn .signIn-card {
+        width: 40%;
+        margin: auto;
+        text-align: left;
+        padding: 2em;
+    }
+
+    .popupSignIn-card {
+        background-color: var(--color-secondaryBG);
+        width: 45%;
+    }
+}
+
+@media (min-width: 1101px) {
+    .-navView { grid-template-columns: 3fr 6fr 2fr; }
+
+    #signIn-bsk01 {visibility: visible;}
+    #signIn-bsk02 {visibility: hidden;}
+
+    .navSub-greetn { text-align: right; }
+
+    .navSub-orderType {
+        /*display: none;*/
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    
+    .navSub-adrSet {
+        /*display: flex;*/
+        justify-content: right;
+        display: none;
+    }
+
+    .favs-grid { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+
+    .menu-gap { gap: 20em;}
+
+    .menu-pad { padding: 2em; }
+
+    .menuType-carda {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6em 9em;
+    }
+
+    .aboutCard-contents {
+        display: flex;
+        flex-direction: row;
+        gap: 6em;
+    }
+
+    #about .img-size {
+        height: 30vh;
+    }
+
+    .nav-sort {
+        grid-template-columns: 3fr 5fr 2fr;
+    }
+
+    .basket-contents {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+    
+    .-gap {
+        gap: 5em;
+        padding: 3em 0 10em;
+    }
+
+    .checkoutPay-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4em;
+    }
+
+    #signIn .signIn-card {
+        width: 40%;
+        margin: auto;
+        text-align: left;
+        padding: 2em;
+    }
+
+    .popupSignIn-card {
+        background-color: var(--color-secondaryBG);
+        width: 24%;
+    }
+}

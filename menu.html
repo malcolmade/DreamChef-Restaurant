@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamChef Menu</title>
+        <script src="https://kit.fontawesome.com/42cec204b0.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/dreamChef.css">
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <nav id="nav">
+            <!-- nav bar upper section -->
+            <section id="nav-main">
+                <div class="container -navView">
+                    <img class="logo" src="images/DreamChef_logo.png" alt="Logo">
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./menu.html#menu-deals">DEALS</a></li>
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><input type="button" id="btn_order" class="btn btn-primary1" value="ORDER NOW"></li>
+                        </ul>
+                    </div>
+                    <div id="signIn-bsk01">
+                        <ul>
+                            <li><a href="./signIn.html" id="sign_in"><i class="fa fa-person"></i> SIGN IN</a></li>
+                            <li><a href="" id="basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0.00</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="signIn-bsk02">
+                    <ul>
+                        <li><a href="./signIn.html" id="sign_in"><i class="fa fa-person"></i> SIGN IN</a></li>
+                        <li><a href="" id="basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0.00</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- nav bar lower section-->
+            <section id="nav-sub">
+                <div class="container -navView">
+                    <ul>
+                        <li>
+                            <div class="navSub-greetn">
+                                <p class="title title-main">WELCOME TO DREAMCHEF</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navSub-orderType">
+                                <span>
+                                    <input type="button" id="btn_orderCollect" class="btn btn-secondary1" value="ORDER FOR COLLECTION">
+                                </span>
+                                <span>
+                                    <input type="button" id="btn_orderDeliver" class="btn btn-secondary1" value="ORDER FOR DELIVERY">
+                                </span>
+                            </div>
+                            <div class="navSub-adrSet">
+                                <input type="button" id="btn_changeAdr" class="btn btn-secondary2" value="CHANGE">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navSub-adr navSub-adrSet">
+                        <span>
+                            <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                            <a href="" id="address_deliver"><small>126 Fashion street, London E1 6PG</small></a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </nav>
+
+        <!-- Menu -->
+        <section id="menu">
+            <div class="container">
+                <div class="menu-container menu-gap">
+                    <!-- Menu Side List -->
+                    <!--<div class="menu-contents">-->
+                        <div class="menuSide-contents">
+                            <div class="menu-sideList menu-pad sideList-rowGap">
+                                <ul>
+                                    <li><a href="#menu-salads">Salads</a></li><hr>
+                                    <li><a href="#menu-chicken">Chicken</a></li><hr>
+                                    <li><a href="#menu-beef">Beef</a></li><hr>
+                                    <li><a href="#menu-lamb">Lamb</a></li><hr>
+                                    <li><a href="#menu-pork">Pork</a></li><hr>
+                                    <li><a href="#menu-rice">Rice</a></li><hr>
+                                    <li><a href="#menu-pasta">Pasta</a></li><hr>
+                                    <li><a href="#menu-quinoa">Quinoa</a></li><hr>
+                                    <li><a href="#menu-sides">Sides</a></li><hr>
+                                    <li><a href="#menu-deserts">Deserts</a></li><hr>
+                                    <li><a href="#menu-drinks">Drinks</a></li><hr>
+                                    <br>
+                                    <li><a href="#menu-deals">Deals</a></li><hr>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- MENU ITEMS -->
+                        <div class="menuGroup-card">
+                            <!-- SALADS -->
+                            <div id="menu-salads">
+                                <div class="tab-left menuType-group">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">SALADS</p>
+                                        <p>Cool autumn days call for hearty, crisp salads with plenty of flavour.<br>
+                                            That’s all the reason you need to get into our organic Seasonal Salad & Veg. With a mix of multiple different salad and veggie portions, you’ll have all you need to lay on a luscious salad spread.</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/salads/aragula.PNG" id="img_salad01" alt="salad1">
+                                            <p id="salad_01a" class="title title-main5">ARAGULA</p>
+                                            <p id="salad_01b">Crisp salads with plenty of flavour.</p>
+                                            <p id="salad_01c">£32.99</p>
+                                            <input type="button" id="btn_salad01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/salads/caprese.PNG" id="img_salad02" alt="salad2">
+                                            <p id="salad_02a" class="title title-main5">CAPRESE</p>
+                                            <p id="salad_02b">Crisp salads with plenty of flavour.</p>
+                                            <p id="salad_02c">£12.29</p>
+                                            <input type="button" id="btn_salad02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/salads/tabbouleh.PNG" id="img_salad03" alt="salad3">
+                                            <p id="salad_03a" class="title title-main5">TABBOULEH</p>
+                                            <p id="salad_03b">Crisp salads with plenty of flavour.</p>
+                                            <p id="salad_03c">£18.59</p>
+                                            <input type="button" id="btn_salad03" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 4 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/salads/tuna.PNG" id="img_salad04" alt="salad4">
+                                            <p id="salad_04a" class="title title-main5">TUNA</p>
+                                            <p id="salad_04b">Crisp salads with plenty of flavour.</p>
+                                            <p id="salad_04c">£22.00</p>
+                                            <input type="button" id="btn_salad04" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- CHICKEN -->
+                            <div id="menu-chicken">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">CHICKEN</p>
+                                        <p>Awesome crunchy tastiest chicken</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/chicken meals/grilled chicken.png" id="img_chicken01" alt="chicken1">
+                                            <p id="chicken_01a" class="title title-main5">GRILLED CHICKEN</p>
+                                            <p id="chicken_01b">Great tasting chicken marinated with a variety of spices</p>
+                                            <p id="chicken_01c">£8.59</p>
+                                            <input type="button" id="btn_chicken01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/chicken meals/barbecue chicken wings.png" id="img_chicken02" alt="chicken2">
+                                            <p id="chicken_02a" class="title title-main5">BARBECUE WINGS</p>
+                                            <p id="chicken_02b">Great tasting chicken marinated with a variety of spices</p>
+                                            <p id="chicken_02c">£12.99</p>
+                                            <input type="button" id="btn_chicken02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/chicken meals/lemon chicken.png" id="img_chicken03" alt="chicken3">
+                                            <p id="chicken_03a" class="title title-main5">LEMON CHICKEN</p>
+                                            <p id="chicken_03b">Great tasting chicken marinated with a variety of spices</p>
+                                            <p id="chicken_03c">£5.39</p>
+                                            <input type="button" id="btn_chicken03" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- BEEF -->
+                            <div id="menu-beef">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">BEEF</p>
+                                        <p>Our beef has been cured for days and marinated with flavours to crave for</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/beef/chinese beef.png" id="img_beef01" alt="beef1">
+                                            <p id="beef_01a" class="title title-main5">CHINESE BEEF</p>
+                                            <p id="beef_01b">Specialy marinated with spices from the meditaranean</p>
+                                            <p id="beef_01c">£13.05</p>
+                                            <input type="button" id="btn_beef01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/beef/ribeye steak.png" id="img_beef02" alt="beef2">
+                                            <p id="beef_02a" class="title title-main5">RIBEYE STEAK</p>
+                                            <p id="beef_02b">Specialy marinated with spices from the meditaranean</p>
+                                            <p id="beef_02c">£21.15</p>
+                                            <input type="button" id="btn_beef02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- LAMB -->
+                            <div id="menu-lamb">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">LAMB</p>
+                                        <p>Specily prepared rare lamb that has been cured for days and marinated with flavours to crave for</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/lamb/lamb chops blueberry-balsamic.png" id="img_lamb01a" alt="lamb1">
+                                            <p id="lamb_01a" class="title title-main5">BLUEBERRY-BALSAMIC LAMB CHOPS</p>
+                                            <p id="lamb_01b">Specialy marinated with spices from the meditaranean</p>
+                                            <p id="lamb_01c">£16.69</p>
+                                            <input type="button" id="btn_lamb01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- PORK -->
+                            <div id="menu-pork">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">PORK</p>
+                                        <p>Rarest pork imported from specialy sourced out farmers</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/pork/gourmet roast pork.png" id="img_pork01" alt="pork1">
+                                            <p id="pork_01a" class="title title-main5">GOURMET ROAST PORK</p>
+                                            <p id="pork_01b">Crispy pork with plenty of flavour.</p>
+                                            <p id="pork_01c">£17.59</p>
+                                            <input type="button" id="btn_pork01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/pork/pork ribs.png" id="img_pork02" alt="pork2">
+                                            <p id="pork_02a" class="title title-main5">PORK RIBS</p>
+                                            <p id="pork_02b">Salted pork with plenty of flavour.</p>
+                                            <p id="pork_02c">£9.59</p>
+                                            <input type="button" id="btn_pork02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images//pork/pork veg.png" id="img_pork03" alt="pork3">
+                                            <p id="pork_03a" class="title title-main5">PORK & VEGETABLES</p>
+                                            <p id="pork_03b">Succulent pork with plenty of flavour.</p>
+                                            <p id="pork_03c">£7.79</p>
+                                            <input type="button" id="btn_pork03" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- RICE -->
+                            <div id="menu-rice">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">RICE</p>
+                                        <p>With a wide variety of rice and spices, you will be spoilt for choice.</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/rice/coconut rice.png" id="img_pork01" alt="rice1">
+                                            <p id="rice_01a" class="title title-main5">COCONUT RICE</p>
+                                            <p id="rice_01b">Rich in nutrient with plenty of flavour.</p>
+                                            <p id="rice_01c">£12.59</p>
+                                            <input type="button" id="btn_rice01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/rice/fried rice.png" id="img_pork02" alt="rice2">
+                                            <p id="rice_02a" class="title title-main5">FRIED RICE</p>
+                                            <p id="rice_02b">Rich in nutrient with plenty of flavour.</p>
+                                            <p id="rice_02c">£12.59</p>
+                                            <input type="button" id="btn_rice02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/rice/jollof rice.png" id="img_pork03" alt="rice3">
+                                            <p id="rice_03a" class="title title-main5">JOLLOF RICE</p>
+                                            <p id="rice_03b">Rich in nutrient with plenty of flavour.</p>
+                                            <p id="rice_03c">£12.59</p>
+                                            <input type="button" id="btn_rice03" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- PASTA -->
+                            <div id="menu-pasta">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">PASTA</p>
+                                        <p>Awesome crunchy tastiest pasta</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/pasta/baked feta pasta.png" id="img_pasta01" alt="pasta1">
+                                            <p id="pasta_01a" class="title title-main5">BAKED FETA PASTA</p>
+                                            <p id="pasta_01b">Rich in nutrient with plenty of flavour.</p>
+                                            <p id="pasta_01c">£7.59</p>
+                                            <input type="button" id="btn_pasta01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/pasta/trottole pasta.png" id="img_pasta02" alt="pasta2">
+                                            <p id="pasta_02a" class="title title-main5">TROTTOLE PASTA</p>
+                                            <p id="pasta_02b">Rich in nutrient with plenty of flavour.</p>
+                                            <p id="pasta_02c">£12.50</p>
+                                            <input type="button" id="btn_pasta02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- QUINOA -->
+                            <div id="menu-quinoa">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">QUINOA</p>
+                                        <p>Best of the rest tastiest continental quinoa</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/quinoa/roasted salmon quinoa.png" id="img_quinoa01" alt="quinoa1">
+                                            <p id="quinoa_01a" class="title title-main5">ROASTED SALMON QUINOA</p>
+                                            <p id="quinoa_01b">Rich in nutrient with plenty of flavour.</p>
+                                            <p id="quinoa_01c">£10.55</p>
+                                            <input type="button" id="btn_quinoa01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- SIDES -->
+                            <div id="menu-sides">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">SIDES</p>
+                                        <p>Choice of sides to go with your meal</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/sides/sesame prawn on toast.png" id="img_side01" alt="side1">
+                                            <p id="side_01a" class="title title-main5">SESAME PRAWNS ON TOAST</p>
+                                            <p id="side_01b">Covered in prawns</p>
+                                            <p id="side_01c">£13.54</p>
+                                            <input type="button" id="btn_side01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/sides/veg spring rolls.png" id="img_side02" alt="side2">
+                                            <p id="side_02a" class="title title-main5">VEGETABLE SPRING ROLLS</p>
+                                            <p id="side_02b">Awesome for vegetarians</p>
+                                            <p id="side_02c">£4.23</p>
+                                            <input type="button" id="btn_side02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- DESERTS -->
+                            <div id="menu-deserts">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">DESERTS</p>
+                                        <p>Awsome crunchy tastiest salad</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/deserts/chochy cake.png" id="img_desert01" alt="desert1">
+                                            <p id="desert_01a" class="title title-main5">CHOCOLATE CAKE</p>
+                                            <p id="desert_01b">Pleasure for sweet lovers</p>
+                                            <p id="desert_01c">£4.37</p>
+                                            <input type="button" id="btn_desert01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/deserts/lemon meringuePie.png" id="img_desert02" alt="desert2">
+                                            <p id="desert_02a" class="title title-main5">LEMON MERINGUE PIE</p>
+                                            <p id="desert_02b">Pleasure for sweet lovers</p>
+                                            <p id="desert_02c">£7.55</p>
+                                            <input type="button" id="btn_desert02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/deserts/mixedBerry mousse.png" id="img_desert03" alt="desert3">
+                                            <p id="desert_03a" class="title title-main5">MIXED-BERRY MOUSSE</p>
+                                            <p id="desert_03b">Pleasure for sweet lovers</p>
+                                            <p id="desert_03c">£3.99</p>
+                                            <input type="button" id="btn_desert03" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- DRINKS -->
+                            <div id="menu-drinks">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">DRINKS</p>
+                                        <p>Awsome crunchy tastiest salad</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/drinks/bottle_01.png" id="img_drink01" alt="drink1">
+                                            <p id="drink_01a" class="title title-main5">MAINE ORANGE BOTTLE</p>
+                                            <p id="drink_01b">Great thirst quenching drink</p>
+                                            <p id="drink_01c">£1.20</p>
+                                            <input type="button" id="btn_drink01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/drinks/bottle_02.png" id="img_drink02" alt="drink2">
+                                            <p id="drink_02a" class="title title-main5">MAINE LEMONADE BOTTLE</p>
+                                            <p id="drink_02b">Great thirst quenching drink</p>
+                                            <p id="drink_02c">£1.35</p>
+                                            <input type="button" id="btn_drink02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/drinks/can_01.png" id="img_drink03" alt="drink3">
+                                            <p id="drink_03a" class="title title-main5">FANTA STRAWBERRY CAN</p>
+                                            <p id="drink_03b">Great thirst quenching drink</p>
+                                            <p id="drink_03c">£1.10</p>
+                                            <input type="button" id="btn_drink03" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                            <!-- DEALS -->
+                            <div id="menu-deals">
+                                <div class="tab-left">
+                                    <div class="content-sub title-pad">
+                                        <p class="title title-main4">DEALS</p>
+                                        <p>Select from a combintion of great selections from our menu</p>
+                                    </div>
+                                    <div class="menuType-card menuType-carda">
+                                        <!-- Item 1 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/discounts/disc_02.png" id="img_deal01" alt="deal1">
+                                            <p id="deal_01a" class="title title-main5">DEAL ONE</p>
+                                            <p id="deal_01b">Spoilt for choice</p>
+                                            <p id="deal_01c">£12.59</p>
+                                            <input type="button" id="btn_deal01" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/discounts/disc_03.png" id="img_deal02" alt="deal2">
+                                            <p id="deal_02a" class="title title-main5">DEAL TWO</p>
+                                            <p id="deal_02b">Spoilt for choice</p>
+                                            <p id="deal_02c">£12.59</p>
+                                            <input type="button" id="btn_deal02" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/discounts/disc_03.png" id="img_deal03" alt="deal3">
+                                            <p id="deal_03a" class="title title-main5">DEAL THREE</p>
+                                            <p id="deal_03b">Spoilt for choice</p>
+                                            <p id="deal_03c">£12.59</p>
+                                            <input type="button" id="btn_deal03" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                        <!-- Item 4 -->
+                                        <div class="menuItem-card">
+                                            <img src="./Images/discounts/disc_05.png" id="img_deal04" alt="deal4">
+                                            <p id="deal_04a" class="title title-main5">DEAL FOUR</p>
+                                            <p id="deal_04b">Spoilt for choice</p>
+                                            <p id="deal_04c">£12.59</p>
+                                            <input type="button" id="btn_deal04" class="btn btn-primary1 item-size" value=" ADD TO BASKET">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><hr><br>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer  -->
+        <footer id="footer">
+            <div class="footer-main">
+                <div class="footer-main1">
+                    <p>Got a question?</p>
+                    <a href="" class="btn btn-primary2"> CONTACT US </a>
+                </div>
+                <div class="footer-main2 container">
+                    <!-- links column 1 -->
+                    <div>
+                        <a href="./menu.html">MENU</a><br>
+                        <a href="./menu.html#menu-deals">MENU DEALS</a><br>
+                        <a href="#">ORDER</a>
+                    </div>
+                    <!-- links column 2 -->
+                    <div>
+                        <a href="#favourites">OUR FAVOURITES</a><br>
+                        <a href="./about.html">ABOUT US</a><br>
+                        <a href="./contact-help.html">HELP & CONTACT</a>
+                    </div>
+                    <!-- social icons column -->
+                    <div class="social">
+                        <div>
+                            <div class="title-footerSocial">FOLLOW US</div>
+                            <div>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="https://www.instragram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <section class="footer-sub container">
+                <div class="footer-sub1">
+                    <div> <img src="images/DreamChef_logoLight.png" alt="Light Logo"> </div>
+                </div>
+                <div class="footer-sub2">
+                    <a href = "./terms.html">Terms and Conditions</a>
+                    <a href = "./cookiesAds_policy.html">Cookies & Ads Policy</a>
+                    <a href = "./privacy.html">Privacy</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

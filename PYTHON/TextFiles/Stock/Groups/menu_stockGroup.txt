@@ -1,0 +1,7 @@
+* STOCK ITEMS-GROUPS MENU
+1:  Display Group
+2:  Add New Group
+3:  Update Existing Group
+4:  Delete Group
+5:  Back to Main Menu
+0:  Exit

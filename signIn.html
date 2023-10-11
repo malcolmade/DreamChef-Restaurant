@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DreamChef Sign In</title>
+        <script src="https://kit.fontawesome.com/42cec204b0.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/dreamChef.css">
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <nav id="nav">
+            <!-- nav bar upper section -->
+            <section id="nav-main">
+                <div class="container -navView">
+                    <img class="logo" src="images/DreamChef_logo.png" alt="Logo">
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./menu.html">MENU</a></li>
+                            <li><a href="./menu.html#menu-deals">DEALS</a></li>
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><input type="button" id="btn_order" class="btn btn-primary1" value="ORDER NOW"></li>
+                        </ul>
+                    </div>
+                    <div id="signIn-bsk01">
+                        <ul>
+                            <li><a href="./signIn.html" id="sign_in"><i class="fa fa-person"></i> SIGN IN</a></li>
+                            <li><a href="" id="basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0.00</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="signIn-bsk02">
+                    <ul>
+                        <li><a href="./signIn.html" id="sign_in"><i class="fa fa-person"></i> SIGN IN</a></li>
+                        <li><a href="" id="basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0.00</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- nav bar lower section-->
+            <section id="nav-sub" class="navSub-null"></section>
+        </nav>
+
+        <!-- -->
+        <form id="signIn">
+            <div class="container">
+                <p class="title title-main1 title-uLine">SIGN IN</p>
+                <div class="signIn-card">
+                    <!-- email -->
+                    <label for="email">Email<i>*</i></label><br>
+                    <input type="email" id="email" name="email" required>
+                    <br> <br><br>
+                    <!-- password -->
+                    <label for="pwd">Password<i>*</i></label><br>
+                    <input type="password" id="pwd" name="pwd" required>
+                    <br><br>
+                    <a href=""><small>Forgotten your password?</small></a>
+                </div>
+                <div class="signReg-btns">
+                    <br><br><br>
+                    <input type="button" id="btn_signIn" class="btn btn-primary1" value="SIGN IN">
+                    <br><br><hr><hr><br>
+                    <input type="button" id="btn_register" class="btn btn-secondary2" value="REGISTER" onclick="window.location.href='./register.html';">
+                    <br><br><br>
+                </div>
+            </div>
+            
+        </form>
+
+        <!-- Footer  -->
+        <footer id="footer">
+            <div class="footer-main">
+                <div class="footer-main1">
+                    <p>Got a question?</p>
+                    <a href="./contact-help.html" class="btn btn-primary2"> CONTACT US </a>
+                </div>
+                <div class="footer-main2 container">
+                    <!-- links column 1 -->
+                    <div>
+                        <a href="./menu.html">MENU</a><br>
+                        <a href="./menu.html#menu-deals">MENU DEALS</a><br>
+                        <a href="#">ORDER</a>
+                    </div>
+                    <!-- links column 2 -->
+                    <div>
+                        <a href="#favourites">OUR FAVOURITES</a><br>
+                        <a href="./about.html">ABOUT US</a><br>
+                        <a href="./contact-help.html">HELP & CONTACT</a>
+                    </div>
+                    <!-- social icons column -->
+                    <div class="social">
+                        <div>
+                            <div class="title-footerSocial">FOLLOW US</div>
+                            <div>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="https://www.instragram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <section class="footer-sub container">
+                <div class="footer-sub1">
+                    <div> <img src="images/DreamChef_logoLight.png" alt="Light Logo"> </div>
+                </div>
+                <div class="footer-sub2">
+                    <a href = "./terms.html">Terms and Conditions</a>
+                    <a href = "./cookiesAds_policy.html">Cookies & Ads Policy</a>
+                    <a href = "./privacy.html">Privacy</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

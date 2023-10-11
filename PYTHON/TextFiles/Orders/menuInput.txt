@@ -1,0 +1,48 @@
+CUSTOMER ACCOUNT ORDERS ......................
+
+
+
+
+
+
+
+* DELETE ORDER
+* DELETE ALL ORDERS
+
+
+
+Enter Order ID
+Enter Order Name
+Invalid Order ID!!!
+Invalid Order Name!!!
+
+
+
+
+Enter Customer's Account ID: 
+Enter Customer's Account First Name: 
+Enter Customer's Account Last Name: 
+
+Invalid Customer ID!
+Invalid Customer Name!
+
+
+
+
+DELETE ALL ACCOUNTS? [1 = YES] or [Any other key = NO]: 
+DELETE ACCOUNT? [1 = YES] or [Any other key = NO]: 
+SUCCESSFULLY DELETED!
+DELETE CANCELLED!
+
+
+
+
+NO ORDERS!
+
+
+
+
+
+ is Invalid input!!!
+Enter a valid option from above
+Press any key to proceed

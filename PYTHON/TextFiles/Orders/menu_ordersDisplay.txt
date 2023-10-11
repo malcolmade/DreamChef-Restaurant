@@ -1,0 +1,5 @@
+* DISPLAY ORDERS MENU
+1:  Display Order by ID
+2:  Display All Orders
+3:  Back to Main menu
+0:  Exit

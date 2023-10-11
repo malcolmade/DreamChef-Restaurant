@@ -1,0 +1,31 @@
+*** HELP PAGE ***
+* TIME OPEN:
+11am to 7pm
+* DAYS OPEN
+Monday to Friday
+* ADDRESS:
+120 Fashion Street\nLondon\nE1 6PX\nUK
+* TELEPHONE:
++44 20 5636 3956
+* EMAIL:
+support@dreamchef_restaurant.co.uk
+
+
+
+
+
+
+
+
+
+*** ABOUT PAGE ***
+* TITLE #1
+OUR STORY
+* TITLE #1 DESCRIPTION
+
+* TITLE #2
+OUR BEST SPECIALITIES
+* TITLE #2 DESCRIPTION
+
+* IMAGE LOCATION:
+/Images/backGround/about_us/aboutUs.PNG

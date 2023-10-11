@@ -1,0 +1,8 @@
+* DISPLAY CUSTOMER ACCOUNT MENU
+1:  Display Account by ID
+2:  Display Account by Name
+3:  Display Account by Email
+4:  Display All Customer Accounts
+5:  Display selected Customer Account Orders
+6:  Back to Main Menu
+0:  Exit

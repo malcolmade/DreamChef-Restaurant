@@ -1,0 +1,48 @@
+* ... ADMIN INTERFACE ... *
+* PLEASE LOG IN *
+
+Enter User Name: 
+Enter Password: 
+
+Welcome!
+Invalid Entry!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ends @ line 48
+ is Invalid input!!!
+Enter a valid option from above
+Press any key to proceed

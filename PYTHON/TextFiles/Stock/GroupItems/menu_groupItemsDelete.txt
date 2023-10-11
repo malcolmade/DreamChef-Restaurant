@@ -1,0 +1,6 @@
+* DELETE ITEM MENU
+1:  Delete Item by ID
+2:  Delete Item by Name
+3:  Delete All Items in A Group
+4:  Back to Main Menu
+0:  Exit

@@ -1,0 +1,8 @@
+* HOME PAGE EDIT MENU
+1:  Display Favourites
+2:  Add Favourite
+3:  Update Favourite Position
+4:  Update Favourite Stock Item
+5:  Delete Favourite
+6:  Back to Menu
+0:  Exit

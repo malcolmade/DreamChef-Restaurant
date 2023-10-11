@@ -1,0 +1,5 @@
+* DELETE ORDERS MENU
+1:  Delete Order by ID
+2:  Delete All Orders
+3:  Back to Main Menu
+0:  Exit
